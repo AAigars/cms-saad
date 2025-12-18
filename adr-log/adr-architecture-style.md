@@ -10,19 +10,19 @@ We need to select a architectural style that will define the structure of the Co
 
 2. Microservice Architecture — Pattern where the backend is composed of multiple independently deployable services which is designed for high scalability and flexibility.
 
-3. Layered Architecture — Pattern where code is seperated logically within a single application.
+3. Layered Architecture — Pattern where code is separated logically within a single application.
 
 ## Decision Outcome
 
-Chosen option: "Three-Tier Architecture", becaues it provides the clearest and most appropriate high-level structure for the project by clear separation of presentation tier, application tier, and a data tier which will adhere to the non-functional requirements of scalibility (NFR01), performance (NFR02) and maintainability.
+Chosen option: "Three-Tier Architecture", because it provides the clearest and most appropriate high-level structure for the project by clear separation of presentation tier, application tier, and a data tier which will adhere to the non-functional requirements of scalability (NFR01), performance (NFR02) and maintainability.
 
 While the second option, microservice architecture, is a powerful pattern for scalability, it introduces significant complexity in the development, deployment and management, which is not ideal for the proof-of-concept.
 
-And lastly the third option, layered architecture, does not describe the high-level seperation between the frontend, backend and database.
+And lastly the third option, layered architecture, does not describe the high-level separation between the frontend, backend and database.
 
 ### Consequences
 
-- Good, because creates a strong, clear seperation of logic, which improves maintainability.
+- Good, because creates a strong, clear separation of logic, which improves maintainability.
 
 - Good, presentation tier and data tier can't communicate directly, a well-designed application tier will ensure that we can secure the data easily.
 
